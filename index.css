@@ -1,0 +1,68 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #868484;
+  font-size: 2rem;
+}
+
+.container-score {
+  max-width: 100%;
+  grid-column: span 3;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-score {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header img {
+  max-width: 60px;
+}
+
+#table {
+  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3,  3fr);
+  width: 336px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(127, 99, 151);
+  border: 0.1311rem rgb(255, 255, 255) solid;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100px;
+  border-radius: 0.5rem;
+  border: 0.1311rem solid rgb(0, 0, 0);
+}
+
+img { width: 87%; }
+
+.x-bg { background-color: rgb(167, 162, 160); }
+.o-bg { background-color: rgba(80, 192, 185, 0.726); }
+.tie-bg { background-color: rgb(255, 158, 94);}
+.bg-gray { background-color: rgb(43, 43, 43); }
+.highlight-the-true-combination { 
+  padding: 0.5rem;
+  background-color: rgb(160, 255, 71); 
+}
+
+.unavailable {
+  padding: 0.5rem;
+  background-color: rgb(255, 129, 129);
+  border: 0.15rem rgb(255, 60, 0) solid;
+}
